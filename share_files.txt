@@ -3,6 +3,8 @@ TRANSFERIR ARCHIVOS DE LINUX A WINDOWS Y VICEVERSA
 utlizaremos el comando scp (secure copy) utiliza el protocolo ssh, por lo
 cual hay que asegurarnos de iniciar el servicio en nuestro kali
 
+ssh service start 
+
 para enviar un archivo de windows a linux la sintaxis seria:
 
 scp C:\ruta\de\archivo user_linux@ip_address:/ruta/destino
