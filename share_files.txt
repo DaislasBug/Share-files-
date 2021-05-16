@@ -1,0 +1,23 @@
+TRANSFERIR ARCHIVOS DE LINUX A WINDOWS Y VICEVERSA
+
+utlizaremos el comando scp (secure copy) utiliza el protocolo ssh, por lo
+cual hay que asegurarnos de iniciar el servicio en nuestro kali
+
+para enviar un archivo de windows a linux la sintaxis seria:
+
+scp C:\ruta\de\archivo user_linux@ip_address:/ruta/destino
+
+en mi caso
+scp C:\Users\Lenovo\Desktop\windows_file.txt kali@192.168.0.11:/home/kali/Desktop
+
+ingresamos el password del kali y listo
+
+
+Para hacerlo al reves seria:
+
+igual desde nuestro windows, solo debemos saber la ruta de nuestro archivo en linux
+y lo mandamos a traer
+
+scp user_linux@ip_address:/ruta/del/archivo.txt . // en este caso el punto es para inidcar que lo copie en este mismo directorio
+
+ingresamos la contraseña y listo. 
